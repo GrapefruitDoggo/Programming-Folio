@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Website Title</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="TankGame/TemplateData/UnityProgress.js"></script>
+    <script src="TankGame/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "TankGame/Build/2021-05-05.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <img src="img/aie-logo-dark.jpg" alt="Logo" style="width: 100px; height: auto" />
+            <h1>Work Folio</h1>
+            <h2>Emma Cooke</h2>
+        </div>
+        <div id="menu">
+            <div id="mainMenu">
+                <a href="about.html">About</a> |
+                <a href="AIE.html" class="menuCurrentPage">AIE</a> |
+                <a href="#">Personal</a>
+            </div>
+            <div id="subMenu">
+                <a href="#" class="menuCurrentPage">Tank Game</a> |
+                <a href="#">Temp</a> |
+                <a href="#">Temp</a> |
+                <a href="#">Temp</a> |
+            </div>
+        </div>
+        <div id="content">
+            <h1>AIE Projects</h1>
+            <h2>Tank game</h2>
+            <div class="webgl-content">
+                <div id="unityContainer" style="width: 960px; height: 600px"></div>
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                    <div class="title">Tank Game</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2021</p>
+        </div>
+    </div>
+</body>
+</html>

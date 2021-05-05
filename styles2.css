@@ -1,0 +1,100 @@
+﻿body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+#header {
+    height: 100px;
+}
+#header h1 {
+    display: inline-block;
+    position: relative;
+    top: -35px;
+}
+#header h2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#menu {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-color: #ddd;
+}
+#menu a{
+    padding: 5px 5px;
+}
+#menu a:hover{
+    background-color: #999;
+    color: #eee;
+}
+#mainMenu {
+    padding: 5px;
+    font-size: 1.5em;
+}
+#subMenu {
+    padding: 5px;
+    border-top: solid 1px;
+    font-size: 1.2em;
+}
+
+#content {
+    margin: 10px;
+    min-height: 1000px;
+    padding-bottom: 50px;
+}
+#content h2 {
+    border-bottom: solid 1px;
+}
+#content iframe {
+    align: center;
+}
+
+#footer {
+    width: 1000px;
+    background-color: #ddd;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.menuCurrentPage
+{
+    background-color: #111;
+    color: #eee;
+}
+
+
+
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('TankGame/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('TankGame/TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('TankGame/TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('TankGame/TemplateData/progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('TankGame/TemplateData/progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('TankGame/TemplateData/progressFull.Dark.png');}
+
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .webgl-logo {background-image: url('TankGame/TemplateData/webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .fullscreen {background-image: url('TankGame/TemplateData/fullscreen.png'); width: 38px; float: right;}

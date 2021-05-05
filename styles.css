@@ -1,0 +1,29 @@
+﻿body{
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+ul{
+    color: floralwhite;
+}
+img{
+    background-color: black;
+}
+
+#image1 {
+    width:50%;
+    position:fixed;
+    left:35%;
+    top:35%;
+}
+
+#image2 {
+    width: 50%;
+    position: fixed;
+    left: 16%;
+    top: 12%;
+}
